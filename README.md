@@ -8,7 +8,7 @@ Our project aims to build a website for Sustainable International Medical Relief
 As many hospitals were destroyed during the war (still ongoing), the people in Syria currently do not have access to essential medical treatment. The founder of the NGO, Dr. Khaled Almilaji, is seeking to raise money (1) to build more underground hospitals and (2) provide healthcare for Syrian children in need. 
 
 ## Our Task: 
-We want to improve the current website that (1) publicizes updates about the hospital, (4) receives donations, and (3) keeps donors informed on current news. 
+We want to improve the current website that (1) publicizes updates about the hospital, (2) receives donations, and (3) keeps donors informed on current news. 
 
 We will have five main sections for the website: Home, Background, Founder Introduction, News Feed, and Donation Sections. We want the users to have a general understanding of the current situation of Syria’s medical care system, and we will provide a quick link to the donate page to enable monetary donations in a timely fashion. 
 
