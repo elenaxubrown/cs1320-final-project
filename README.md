@@ -1,6 +1,18 @@
 # cs1320-final-project
-This is the final project for Brown csci1320 course. 
-## Front End
-Our project aims to build a website for Sustainable International Medical Relief Organization (SIMRO), which is a NGO based in Turkey. This organization aims to rebuild the Syrian Healthcare system. Many hospitals were destroyed during the war, so the people in Syria do not have access to essential medical treatment right now. The founder of the NGO Dr. Khaled AlmilajiIn is seeking to raise money to build more underground hospitals and provide health care for the people there. We want to improve the website to publicize new information regarding the hospital, receive donations, and keep donors informed on current news. We will have five main sections for the website, which are the home, background, founder introduction, news feed, and donation sections. We want the users could have a general understanding of the current situation of Syria’s medical care system, and we will provide user a quick link to the donate page to enable user donate money in a fast and easy way. 
-## Backend
-The background about Syria War will be the static information on our website, so we don’t need to use the database for this part. We are planning to fetch the information about Syria’s Hospital on BBC, CNN and The Guardian website which will be done in our backend server. We will fetch this information when user click into the information section. We will provide user a quick way to go to the donation page, and we also want to know who went through the link so we are able to thank them. We decide to provide the sign up feature for all of our users. When people signing up the page, we will ask user’s name and email so we can use that to send them the thank you letter. We also care about our user’s security, so besides their information, we will also ask user to set the password for their account. We will definitely use the salt hash to store their password with all of their other information in the database. When people clicked the donate link, we will generate a thank you letter and send it to the user. In our website, we will send an update email quarterly to all of our users who have ever signed up in our website and provide them the updated information with the easy access donate link.
+This is the final project for Brown's CSCI 1320 course. 
+
+## Overview: 
+Our project aims to build a website for Sustainable International Medical Relief Organization (SIMRO), which is an NGO (non-governmental organization) based in Turkey. Their goal is to rebuild the Syrian Healthcare system. 
+
+## Background: 
+As many hospitals were destroyed during the war (still ongoing), the people in Syria currently do not have access to essential medical treatment. The founder of the NGO, Dr. Khaled Almilaji, is seeking to raise money (1) to build more underground hospitals and (2) provide healthcare for Syrian children in need. 
+
+## Our Task: 
+We want to improve the current website that (1) publicizes updates about the hospital, (4) receives donations, and (3) keeps donors informed on current news. 
+
+We will have five main sections for the website: Home, Background, Founder Introduction, News Feed, and Donation Sections. We want the users to have a general understanding of the current situation of Syria’s medical care system, and we will provide a quick link to the donate page to enable monetary donations in a timely fashion. 
+
+## Specifics: 
+The background about Syria War will simply be static information on our website, so we don’t need to use the database for this part. We plan to fetch the information about the Avicenna Hospital from BBC, CNN, and The Guardian websites, which will be done in our backend server, whenever users click the information section. We also automate several processes via a sign-up process that asks for username, email address, and password. As we care for user security, we will definitely use the salt hash to store users’ passwords with all of their other information in the database. When users click a donate link, we will generate thank-you letters to be sent automatically to the users. Through our website, we will send an update email quarterly to all users who signed up on our website.
+
+As per Professor Reiss’s suggestion, we will mostly likely cash every 10-15 minutes instead of whenever a user clicks the information section.
