@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend { 
+border: 0px none currentColor;
+font-family: inherit;
+font-size: 100%;
+font-style: inherit;
+font-weight: inherit;
+margin: 0px;
+outline: 0px none currentColor;
+padding: 0px;
+vertical-align: baseline;
+}
+#main {
+	background-color: #ececec;
+}
+
+#subtitle {
+	height: 200px;
+}
+
+#subtitle h1{
+	font-size: 50pt
+}
+
+#subtitle_text {
+	padding-top: 30px;
+	text-align: center;
+}
+
+#title a {
+	background:url("http://i6.cims.nyu.edu/~sc4507/images/white-trans-25.png");
+	color:#000000;
+	display:inline-block;
+	margin-left: 110px;
+	font-size:21px;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	width:256px;
+	height:25px;
+}
+
+#top {
+	/*background: #ececec url("http://soranoumi.org/images/header/random.php") this is my own website  repeat-x; height:390px; */
+	background-color:#ececec;
+} 
+
+#top a {
+	font-size: 24px;
+}
+
+#top h1 {
+	font-family:Helvetica, Arial, sans-serif;
+	color: black;
+	font-size: 50px;
+	text-align: center;
+}
+
+
+
+.first-block {
+	height: 300px;
+	/*background-image:url(../images/team_discription.png);*/
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.footer{
+	height:100px;
+}
