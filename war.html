@@ -39,35 +39,42 @@
 		<div class="container">
 			<div class="row align-items-center justify-content-between d-flex">
 				<div id="logo">
-					<!-- <a href="index.html"><img src="img/logo.png" alt="" title="" /></a> -->
 					<a href="index.html"><img src="img/title.jpg" width="180"  alt="" title="" /></a>
 				</div>
 				<nav id="nav-menu-container">
 					<ul class="nav-menu">
 						<li class="menu-active"><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<!-- <li><a href="causes.html">Causes</a></li> -->
+						<li class="nav-item dropdown">
+        					<a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          About
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="about.html#simro_intro">SIMRO Project</a>
+					          <div class="dropdown-divider"></div>
+					          <a class="dropdown-item" href="about.html#progress">Avicenna Progress</a>
+					          <div class="dropdown-divider"></div>
+					          <a class="dropdown-item" href="about.html#media_flow">Media Flow</a>
+					        </div>
+				        </li>
+
 						<li><a href="events.html">Events</a></li>
-						<!-- <li class="menu-has-children"><a href="">Blog</a>
-							<ul>
-								<li><a href="blog-home.html">Blog Home</a></li>
-								<li><a href="blog-single.html">Blog Single</a></li>
-							</ul>
-						</li>
-						<li class="menu-has-children"><a href="">Pages</a>
-							<ul>
-								<li><a href="donation.html">Donation</a></li>
-								<li><a href="event-details.html">Event Details</a></li>
-								<li><a href="elements.html">Elements</a></li>
-							</ul>
-						</li> -->
+						<li class="nav-item dropdown">
+        					<a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          Story
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="founder.html">Founder</a>
+					          <div class="dropdown-divider"></div>
+					          <a class="dropdown-item" href="war.html">Syrian War</a>
+					        </div>
+				        </li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav><!-- #nav-menu-container -->
 			</div>
 		</div>
 	</header>
-	<!-- Start Header Area -->
+	<!-- End Header Area -->
 
 	<!-- start Banner Area -->
 	<section class="home-banner-area relative">
@@ -92,15 +99,27 @@
 
 	<!-- Start Condition Area -->
 	<section class="para-area para-gap">
-		<div class="container-fluid">
-			<div class="row align-items-center justify-content-center">
-				<div class="col-lg-4 col-md-7 col-sm-10">
-					<div class="condition-left">
-						<img class="img-fluid" src="img/war/map.png" alt="">
-					</div>
-				</div>
-				<div class="offset-lg-12 col-lg-6">
-					<div class="condition-right">
+		  <div class="container-fluid">
+		   <div class="row align-items-center justify-content-center">
+		    <div class="col-lg-4 col-md-7 col-sm-10">
+		     <div class="condition-left">
+		      <div class="map-wrap" style="width:100%; height: 445px;" id="mymap"></div>
+		           <!-- <div id="map"></div> -->
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('mymap'), {
+          center: {lat: 34.8021, lng: 38.9968},
+          zoom: 6
+        });
+      }
+    </script>
+		 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd8x0V7eTW52N0kYOY9ms1_fbNeZPUUDA&callback=initMap" async defer></script>
+		      
+		     </div>
+		    </div>
+		    <div class="offset-lg-12 col-lg-6">
+     <div class="condition-right">
 						<p>
 							On the April 23, 2 soldiers refused to carry order of shooting on civilians in Harasta city in Rural Damascus<a href="#1"><sup>5</sup></a>. Several soldiers did the same in other areas. In June 9, Hussein Harmoush, a lieutenant colonel who defected from the Syrian Army along with other 30 soldiers formed the Free Officers Brigade. On June 29, another defected group formed the Free Syrian Army(FSA).  Both groups merged under the flag of FSA with the aim of protecting the people from oppression and taking down the regime<a href="#1"><sup>6</sup></a>
 							The situation got more and more gruesome with use of heavy weapons, airstrikes, barrel bombs, chemical weapons, tactics of siege and weaponization of health and water by the government. Furthermore, with involvement of Hezbollah forces later joined by Iranian formed militias, formation of fundamental Islamic militias, formation of Kurds militias, interfering of Russia, interfering of gulf countries, expanding of Islamic State of Iraq and the Levant(ISIS), the war on ISIS lead by US and remaining members of the international coalition the situation developed into Armed conflict and one of the worst humanitarian crisis since WWII<a href="#1"><sup>7</sup></a>. 
@@ -115,8 +134,8 @@
 
 	
 
-	<section class="para-area para-gap">
-		<div class="container-fluid">
+	<section class="home-banner-area relative">
+		<div class="container-fluid container">
 			<div class="row  d-flex align-items-center justify-content-center">
 				<div class="header-left-war-par ">
 						<p class="pt-15 pb-20">
@@ -133,9 +152,9 @@
 	<!-- End Footer Area -->
 
 	<section class="para-area para-gap">
-		<div class="container-fluid">
+		<div class="container-fluid container">
 			<div class="row  d-flex align-items-center justify-content-center">
-				<div class="header-left-war-par ">
+				<div class="header-left-war-par col-lg-12">
 						<p class="pt-15 pb-20">
 						<a name="1">
 						<b>1.</b> Hafez al-Assad [Internet]. Wikipedia. 2017 [cited 2018 Jan 6];Available from: https://en.wikipedia.org/w/index.php?title=Hafez_al-Assad&oldid=816141517 <br>
@@ -208,12 +227,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		</div>
 	</footer>
 	<!-- End footer Area -->
-
+	
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd8x0V7eTW52N0kYOY9ms1_fbNeZPUUDA&callback=initMap" async defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 	 crossorigin="anonymous"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/easing.min.js"></script>
 	<script src="js/hoverIntent.js"></script>

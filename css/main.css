@@ -1,3 +1,22 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@elenaxubrown 
+0
+0 0 elenaxubrown/cs1320-final-project
+ Code  Issues 0  Pull requests 1  Projects 0  Wiki  Insights  Settings
+cs1320-final-project/css/main.css
+@pwqqq pwqqq Merge branch 'master' of https://github.com/elenaxubrown/cs1320-final…
+89a8475 5 minutes ago
+@pwqqq @elenaxubrown
+Executable File  3566 lines (3243 sloc)  84.6 KB
+    
 /*--------------------------- Color variations ----------------------*/
 /* Medium Layout: 1280px */
 /* Tablet Layout: 768px */
@@ -3563,4 +3582,11 @@ h6 {
 /*# sourceMappingURL=main.css.map */
 .media_flow {
   margin-top: 25px;
+}
+
+@media(max-width: 991px){
+  .change_color {
+    background-color: black;
+    padding: 0px;
+  }
 }

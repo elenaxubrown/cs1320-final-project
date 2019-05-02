@@ -583,7 +583,7 @@ pre code {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     margin-right: auto;
     margin-left: auto
 }
@@ -1304,7 +1304,7 @@ pre code {
     .col-lg-5 {
         -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
-        max-width: 41.666667%
+        max-width: 50.666667%
     }
     .col-lg-6 {
         -ms-flex: 0 0 50%;
@@ -1339,11 +1339,6 @@ pre code {
     .col-lg-12 {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
-        max-width: 100%
-    }
-    .col-lg-13 {
-        -ms-flex: 0 0 58.333333%;
-        flex: 0 0 60.333333%;
         max-width: 100%
     }
     .order-lg-first {
@@ -1441,9 +1436,6 @@ pre code {
     }
     .offset-lg-11 {
         margin-left: 91.666667%
-    }
-    .offset-lg-12 {
-        margin-left: 5.333333%
     }
 }
 
