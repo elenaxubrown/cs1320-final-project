@@ -654,6 +654,12 @@ td, th {
       .section-title p br {
         display: none; } }
 
+.para-gap {
+  padding-top: 0px ; }
+  @media (max-width: 991px) {
+    .para-gap {
+      padding-top:0px; } }
+
 .primary-btn {
   background-color: #61c524;
   line-height: 47px;
@@ -1811,6 +1817,33 @@ body.mobile-nav-active #mobile-nav-toggle {
     .home-banner-area .header-right {
       margin-top: 0px; } }
 
+.para-area {
+  background: #fff; }
+  @media (max-width: 1024px) {
+    .para-area {
+      margin-top: -5px; } }
+  .para-area.banner-area .about-content {
+    padding: 10px 10px;
+    text-align: center;
+    background: transparent;
+    width: 100%;
+    left: 0; }
+    .para-area.banner-area .about-content .box {
+      background: #46dbb7;
+      padding: 0px 0px; }
+    .para-area.banner-area .about-content a {
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px; }
+    .para-area.banner-area .about-content .lnr {
+      margin: 0px 0px;
+      font-weight: 600;
+      position: relative;
+      top: 2px; }
+  @media (max-width: 576px) {
+    .para-area .header-right {
+      margin-top: 0px; } }
+
 .home-banner-area .owl-nav,
 .condition-area .owl-nav,
 .event-area .owl-nav {
@@ -1987,6 +2020,49 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 500; }
     .header-left .vdo-section span a {
       color: #000000; }
+
+.header-left-war {
+  padding-left: 60px;
+  padding-right: 60px; 
+  padding-top: 90px;
+  padding-bottom: 0px;}
+  @media (max-width: 1440px) {
+    .header-left-war {
+      padding-left: 11%; } }
+  @media (max-width: 1300px) {
+    .header-left-war {
+      padding-left: 5%; } }
+  @media (max-width: 767px) {
+    .header-left-war {
+      margin-bottom: 10px; } }
+  .header-left-war h1 {
+    font-size: 60px;
+    line-height: 1; }
+    @media (max-width: 991px) {
+      .header-left-war h1 {
+        font-size: 35px; } }
+
+.header-left-war-par {
+  padding-left: 60px;
+  padding-right: 60px; 
+  padding-top: 0px;
+  padding-bottom: 0px;}
+  @media (max-width: 1440px) {
+    .header-left-war {
+      padding-left: 11%; } }
+  @media (max-width: 1300px) {
+    .header-left-war {
+      padding-left: 11%; } }
+  @media (max-width: 767px) {
+    .header-left-war {
+      margin-bottom: 10px; } }
+  .header-left-war h1 {
+    font-size: 60px;
+    line-height: 1; }
+    @media (max-width: 991px) {
+      .header-left-war h1 {
+        font-size: 35px; } }
+
 
 .nice-select::after {
   border-bottom: 1px solid #999;
