@@ -1559,7 +1559,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  padding: 14px 0px 14px 0;
+  padding: 5px 0px 5px 0;
   position: fixed;
   left: 0;
   top: 0;
@@ -1575,7 +1575,7 @@ h1, h2, h3, h4, h5, h6 {
       background: #222222; } }
 
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   transition: all 0.5s; }
 
 @media (max-width: 673px) {
