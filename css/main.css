@@ -2424,6 +2424,39 @@ body.mobile-nav-active #mobile-nav-toggle {
     .single-event:hover a {
       color: #a978e0; }
 
+.single-event-1 {
+  background: #f9f9ff;
+  padding: 30px 40px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: 20px; 
+  margin-right: 20px;}
+  @media (max-width: 767px) {
+    .single-event-1 {
+      padding: 20px; } }
+  .single-event-1 p {
+    font-size: 12px;
+    text-transform: uppercase; }
+  .single-event-1 h1 {
+    font-size: 14px;
+    /*text-transform: uppercase;*/ 
+    margin-bottom: 15px;}
+  .single-event-1 h4 {
+    font-size: 21px;
+    margin-top: 10px; }
+  .single-event-1 a {
+    color: #000000; }
+  .single-event-1:hover {
+    background: #fff;
+    box-shadow: 0px 20px 50px 0 rgba(153, 153, 153, 0.2); }
+    .single-event-1:hover a {
+      color: #a978e0; }
+
+  
 .event-details-area .condition-right li:nth-child(1)::before {
   content: "\e836"; }
 .event-details-area .condition-right li:nth-child(2)::before {
