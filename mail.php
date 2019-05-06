@@ -42,10 +42,11 @@
 
  <?php
     $to = 'elenaxu517@gmail.com';
-    
+    $fname = $_POST["name"];
     $subject= $_POST["subject"];
     $email = $_POST["email"];
     $message = $_POST["message"];
+    $message_2 = $message;
     // $text= $_POST["message"];
     // $phone= $_POST["phone"];
     
@@ -57,12 +58,18 @@
 
     // $message ="THis is the message";
 
-    $header = "From: " . $email . "\r\n"; // Sender's E-mail
+    // $header = "From: " . $email . "\r\n"; // Sender's E-mail
          // $header .= "Cc:afgh@somedomain.com \r\n";
+    // $header = "FROM: " . $email . "\r\n";
+          $header = "Cc:weiqi_pan@brown.edu \r\n";
+          $header .= "Cc:wangdayuan1995@gmail.com \r\n";
           $header .= "MIME-Version: 1.0\r\n";
           $header .= "Content-type: text/html\r\n";
 
-    $retval =  mail ($to, $subject,$message,$header);
+    $message_2 .= "\n" . "From: " . $fname . "\r\n";
+    $message_2 .= "\n" . "The email address: " . $email . "\r\n";
+
+    $retval =  mail ($to, $subject,$message_2,$header);
 
     // if (@mail($to, $email, $message, $headers))
     // {
