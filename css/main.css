@@ -104,7 +104,6 @@ a, a:focus, a:hover {
   text-decoration: none;
   outline: 0; }
 
-<<<<<<< HEAD
 .myType{
   align-content: center;
   margin-left:19px;
@@ -117,21 +116,6 @@ a, a:focus, a:hover {
   text-align: center;
   color: #61c524;
 }
-=======
-  .myType{
-    align-content: center;
-    margin-left:19px;
-    text-align: center;
-    color: white;
-  }
-
-  .myType:hover{
-    align-content: center;
-    margin-left:19px;
-    text-align: center;
-    color: #61c524;
-  }
->>>>>>> bd8abc786edbdd81eb7e51c578c40498cf28711f
 
 .card-panel {
   margin: 0;
@@ -3522,10 +3506,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*============ End Blog Single Styles  =============*/
 .footer-area {
-  background-color: #ffffff; }
+  background-color: #000000; }
 
 h6 {
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 25px;
   font-size: 18px;
   font-weight: 600; }
