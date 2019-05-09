@@ -1,18 +1,26 @@
-# cs1320-final-project
-This is the final project for Brown's CSCI 1320 course. 
+Underground Syrian Hospital Website Statement:
 
-## Overview: 
-Our project aims to build a website for Sustainable International Medical Relief Organization (SIMRO), which is an NGO (non-governmental organization) based in Turkey. Their goal is to rebuild the Syrian Healthcare system. 
+This document explains how to build and run the code of this project and its organization (e.g. folder and file structure). Its purpose is to provide enough information for a third-party individual to run and modify our code themselves. This handin is also for record-keeping purposes. 
 
-## Background: 
-As many hospitals were destroyed during the war (still ongoing), the people in Syria currently do not have access to essential medical treatment. The founder of the NGO, Dr. Khaled Almilaji, is seeking to raise money (1) to build more underground hospitals and (2) provide healthcare for Syrian children in need. 
+This is our final project statement for the Underground Syrian Women & Children's Hospital Website in Brown's CSCI 1320 course. The members of this project's team include Weiqi Pan (wpan4), Yiquan Xu (yxu73), and Naomi Lee (nlee16).
 
-## Our Task: 
-We want to improve the current website that (1) publicizes updates about the hospital, (2) receives donations, and (3) keeps donors informed on current news. 
+In our final project, we used HTML/CSS/JS to complete the frontend part and PHP to achieve the backend. To open this web application locally, simply open the index.html, the home page of this website, in a web browser of the user’s choosing. Due to our client’s limited budgeting, we are currently using a borrowed server to temporarily host the website, which can be accessed through the link https://www.meetyourwaifu.com/final/. Unfortunately, this link will be closed at the end of the semester. 
 
-We will have five main sections for the website: Home, Background, Founder Introduction, News Feed, and Donation Sections. We want the users to have a general understanding of the current situation of Syria’s medical care system, and we will provide a quick link to the donate page to enable monetary donations in a timely fashion. 
+In the navigation bar, users can clearly discern the five different sections of this web app: Home, About (with sub-navigation bar sections), Events, Story (with sub-navigation bar sections), and Contact. 
 
-## Specifics: 
-The background about Syria War will simply be static information on our website, so we don’t need to use the database for this part. We plan to fetch the information about the Avicenna Hospital from BBC, CNN, and The Guardian websites, which will be done in our backend server, whenever users click the information section. We also automate several processes via a sign-up process that asks for username, email address, and password. As we care for user security, we will definitely use the salt hash to store users’ passwords with all of their other information in the database. When users click a donate link, we will generate thank-you letters to be sent automatically to the users. Through our website, we will send an update email quarterly to all users who signed up on our website.
+On the Home page, we implemented the functionalities that are important for users and required by the client. The users can go to the organization’s donation page on Facebook by simply clicking the “Donate Now” button, which is important for the NGO’s fundraising. There is news feed beneath the “Latest News” header, which is updated every 15 minutes. The news updates are fetched from https://newsapi.org/, by filtering with keywords related to “Syrian War”. Any further details of news articles can be viewed by clicking the titles of the news’ headlines, which leads the user to the specific news article on a third-party news site. Above and below the article’s headline shows the date, time, and the news source, such as BBC, CNN, or YAHOO. 
 
-As per Professor Reiss’s suggestion, we will mostly likely cash every 10-15 minutes instead of whenever a user clicks the information section.
+On the About page, users can click the navigation bar to jump to the specific part of the organization the users want to learn more about, such as SIMRO Project, Avicenna Progress, and Media Flow. It also includes a sign-up button linked to a Google form, which enables the user to receive a monthly email containing updated news on the Syrian War and SIMRO. Immediately, once the user signs up using the Google form, they will receive a thank-you letter; also, an automatic Excel spreadsheet will be updated with the user’s email address from the Google form. 
+
+On the Events page, users can view the latest events on the Syrian War and SIMRO. The client could update the images and context in each section manually. 
+
+On the Story page, users can learn more about the founder, Dr. Khaled Almilaji, and the Syrian War. Embedded in the background on the Syrian War is a Google Maps API, implemented using JS, pinpointing Syria with a location marker. The users could feel more connected with the people in Syria from Google map which would give the users have a geographical sense of the location. 
+
+On the Contact page, the user can write anything they would like to say in the input box labeled “Message”, which would be sent to our email address. This function was implemented using PHP. 
+
+The folders inside the project folder include the 6 HTML pages, CSS folder, fonts folder, img folder, JS folder, PHP folder, SCSS folder and README. 
+
+The CSS folder is comprised of all CSS files we have built. We used Bootstrap to build the frame. The main.css file contains the code showing how we structured our websites. Basically, each separate page is divided into three parts: a header, body, and footer. In the header part, we created a black-and-white linear gradient containing a navigation bar. As the user scrolls down the page, this navigation bar remains sticky and fixed. We also utilized Image Fluid and Carousel, allowing a given image in any section to adjust according to the formatting of the parent element. When a user clicks the donate or sign-up button, s/he/they can observe a change in the button as the mouse hovers over it: the font becomes italicized, and the colors of the text and button’s background interchange. 
+
+In the JS folder, we implemented several functions, primarily in the main.js file. The navigation bar’s color will change as we scroll down the web page. Also, to make the website compatible on different mobile devices, we wrote a function to shrink the nav bar elements to one single icon when the screen is small enough. In fetch_data.js file, similarly to our data fetching in Assignment 2, we fetch the data from the newsapi.org, which is used in the “Latest News” portion on the home page.
+
